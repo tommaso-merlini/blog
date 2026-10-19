@@ -1,7 +1,7 @@
 +++
 title = 'Club del libro I'
 date = 2026-10-18T11:32:29+02:00
-draft = true
+draft = false
 description = 'Primo incontro del club del libro del Poker. 18 Ottobre 2026.'
 +++
 
