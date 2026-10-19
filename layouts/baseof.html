@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="{{ site.Language.LanguageCode }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} / {{ end }}{{ site.Title }}</title>
+  <meta name="description" content="{{ .Description | default site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="stylesheet" href="{{ "style.css" | relURL }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.Title }}" href="{{ "index.xml" | relURL }}">
+</head>
+<body>
+  <a class="skip" href="#main">Vai al contenuto</a>
+  <header>
+    <a class="name" href="{{ site.Home.RelPermalink }}">{{ site.Title }}<span aria-hidden="true">_</span></a>
+    <!-- <nav aria-label="Navigazione"><a href="{{ "about/" | relURL }}">about</a><a href="{{ "index.xml" | relURL }}">rss</a></nav> -->
+  </header>
+  <main id="main">{{ block "main" . }}{{ end }}</main>
+  <footer>poker's blog.<span>built with <a href="https://gohugo.io/">hugo</a></span></footer>
+</body>
+</html>

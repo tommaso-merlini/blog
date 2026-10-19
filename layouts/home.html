@@ -1,0 +1,8 @@
+{{ define "main" }}
+<section class="intro">
+  <h1>Costruire e Scrivere</h1>
+  <p>{{ site.Params.description }}</p>
+</section>
+<h2 class="label">/ appunti</h2>
+{{ partial "posts.html" (where site.RegularPages "Section" "posts") }}
+{{ end }}

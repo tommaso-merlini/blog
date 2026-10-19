@@ -1,0 +1,10 @@
+{{ define "main" }}
+<article>
+  <div class="article-heading">
+    {{ if eq .Section "posts" }}<time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>{{ end }}
+    <h1>{{ .Title }}</h1>
+  </div>
+  <div class="content">{{ .Content }}</div>
+</article>
+<p class="back"><a href="{{ site.Home.RelPermalink }}">← tutti gli appunti</a></p>
+{{ end }}

@@ -1,0 +1,15 @@
+baseURL = 'https://example.org/'
+languageCode = 'it-IT'
+defaultContentLanguage = 'it'
+title = 'poker blog'
+enableRobotsTXT = true
+disableKinds = ['taxonomy', 'term']
+
+[params]
+  description = 'Appunti sui progetti del poker'
+
+[markup.highlight]
+  style = 'github'
+
+[outputs]
+  home = ['HTML', 'RSS']
